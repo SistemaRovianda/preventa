@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#232532"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="true">
+
+            <include layout="@layout/menu_header" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0B0A0A"
+                    android:checkable="false"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp"
+                    tools:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#0B0A0A"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cliente_input"
+                            android:layout_width="180dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="@string/keyClient"
+                            android:textColorHint="#FDF9F9"
+                            app:boxStrokeColor="#FFFFFF"
+                            app:endIconTint="#EFEBEB"
+                            app:hintTextColor="#F6F4F4"
+                            app:startIconTint="#F4F2F2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#050505"
+                                android:textColor="#FFFFFF"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/buscarClienteButton"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:text="@string/searchClientBtnText"
+                            android:textColor="#e1bc5c"
+                            app:textAllCaps="false"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#101010"
+                    android:checkable="false"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp"
+                    tools:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#121111"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/codigo_producto"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="@string/keyProduct"
+                            android:textColorHint="#FFFDF9F9"
+                            app:boxStrokeColor="#EFEAEA">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#090909"
+                                android:textColor="#FFFFFF" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/peso_input"
+                                android:layout_width="180dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="@string/weightPieces"
+                                android:textColorHint="#FFFDF9F9"
+                                app:boxStrokeColor="#EAE6E6">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#090909"
+                                    android:inputType="number"
+                                    android:textColor="#F3EFEF"
+                                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <Button
+                                android:id="@+id/AgregarProductoButton"
+                                style="?attr/materialButtonOutlinedStyle"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:text="@string/addProductBtnText"
+                                android:textColor="#e1bc5c"
+                                app:textAllCaps="false"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0B0A0A"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/cliente_key_sae"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/clientText"
+                                android:textColor="#FFFDF9F9"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/cliente_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/clientNameText"
+                                android:textColor="#FFFDF9F9"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/columnCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/codeText"
+                                android:textColor="#FFFDF9F9"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/columnPresentation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/presentationText"
+                                android:textColor="#FFFDF9F9"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/columnWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/weightPieces"
+                                android:textColor="#FFFDF9F9"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lista_carrito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="200dp"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/totalAmount"
+                                android:textColor="#FFFDF9F9"
+                                android:textSize="24sp" />
+
+
+                            <Button
+                                android:id="@+id/genPreSaleButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/GenPreSale"
+                                app:backgroundTint="#216DCA"
+                                app:textAllCaps="false"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#232532"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_home"
+            style="@style/Widget.App.BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#232532"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_menu" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

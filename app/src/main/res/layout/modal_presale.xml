@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/preSaleFolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/preSaleFolio" />
+
+        <TextView
+            android:id="@+id/clientDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/clientDetails" />
+
+        <TextView
+            android:id="@+id/amountPreSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/amountPreSales" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateToDeliverPreSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dateToDeliver"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/calendarIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionCalendarIcon"
+                app:srcCompat="@drawable/ic_calendar" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkboxUrgent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxPresaleUrgent"
+            app:buttonTint="#D17070" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelPreSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancelPreSale"
+                android:textAllCaps="false"
+                android:textColor="#F6F3F3"
+                app:backgroundTint="#3388CC" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/genPreSaleConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/genPresaleConfirm"
+                android:textAllCaps="false"
+                android:textColor="#F6F3F3"
+                app:backgroundTint="#3388CC" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_section"
+        android:enabled="true"
+        android:icon="@drawable/ventas_ico"
+        android:title="@string/sales"
+        android:color="@color/black"
+        android:visible="true" />
+    <item
+        android:id="@+id/visitas_section"
+        android:enabled="true"
+        android:icon="@drawable/visitas_ico"
+        android:color="@color/black"
+        android:title="@string/visits" />
+
+    <item
+        android:id="@+id/cliente_section"
+        android:enabled="true"
+        android:icon="@drawable/cliente_ico"
+        android:color="@color/black"
+        android:title="@string/clients"/>
+
+    <item
+        android:id="@+id/history_section"
+        android:enabled="true"
+        android:icon="@drawable/history_ico"
+        android:color="@color/black"
+        android:title="@string/history"/>
+</menu>

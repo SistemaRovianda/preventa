@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginView">
+
+    <fragment
+        android:id="@+id/loginView"
+        android:name="com.rovianda.preventa.login.view.LoginView"
+        android:label="LoginView"
+        tools:layout="@layout/loginfragment">
+        <action
+            android:id="@+id/action_loginView_to_homeView"
+            app:destination="@id/homeView" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeView"
+        android:name="com.rovianda.preventa.home.view.HomeView"
+        android:label="HomeView"
+        tools:layout="@layout/home">
+        <action
+            android:id="@+id/action_homeView_to_clientsView"
+            app:destination="@id/clientsView" />
+        <action
+            android:id="@+id/action_homeView_to_historyView"
+            app:destination="@id/historyView" />
+        <action
+            android:id="@+id/action_homeView_to_loginView"
+            app:destination="@id/loginView" />
+        <action
+            android:id="@+id/action_homeView_to_visitsView"
+            app:destination="@id/visitsView" />
+    </fragment>
+    <fragment android:id="@+id/clientsView"
+        android:name="com.rovianda.preventa.clients.view.ClientsView"
+        android:label="ClientsView"
+        tools:layout="@layout/clients">
+        <action
+            android:id="@+id/action_clientsView_to_historyView"
+            app:destination="@id/historyView" />
+        <action
+            android:id="@+id/action_clientsView_to_loginView"
+            app:destination="@id/loginView" />
+        <action
+            android:id="@+id/action_clientsView_to_visitsView"
+            app:destination="@id/visitsView" />
+        <action
+            android:id="@+id/action_clientsView_to_homeView"
+            app:destination="@id/homeView" />
+        <action
+            android:id="@+id/action_clientsView_to_clientGeneralDataView"
+            app:destination="@id/clientGeneralDataView" />
+    </fragment>
+    <fragment android:id="@+id/historyView"
+        android:name="com.rovianda.preventa.history.view.HistoryView"
+        android:label="HistoryView"
+        tools:layout="@layout/history">
+        <action
+            android:id="@+id/action_historyView_to_loginView"
+            app:destination="@id/loginView" />
+        <action
+            android:id="@+id/action_historyView_to_visitsView"
+            app:destination="@id/visitsView" />
+        <action
+            android:id="@+id/action_historyView_to_clientsView"
+            app:destination="@id/clientsView" />
+        <action
+            android:id="@+id/action_historyView_to_homeView"
+            app:destination="@id/homeView" />
+    </fragment>
+    <fragment android:id="@+id/visitsView"
+        android:name="com.rovianda.preventa.visits.view.VisitsView"
+        android:label="VisitsView"
+        tools:layout="@layout/visits_layout">
+        <action
+            android:id="@+id/action_visitsView_to_historyView"
+            app:destination="@id/historyView" />
+        <action
+            android:id="@+id/action_visitsView_to_clientsView"
+            app:destination="@id/clientsView" />
+        <action
+            android:id="@+id/action_visitsView_to_homeView"
+            app:destination="@id/homeView" />
+        <action
+            android:id="@+id/action_visitsView_to_visitMapView"
+            app:destination="@id/visitMapView" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientGeneralDataView"
+        android:name="com.rovianda.preventa.clients.view.ClientGeneralDataView"
+        android:label="ClientGeneralDataView"
+        tools:layout="@layout/client_generaldata">
+        <action
+            android:id="@+id/action_clientGeneralDataView_to_clientsView"
+            app:destination="@id/clientsView" />
+        <action
+            android:id="@+id/action_clientGeneralDataView_to_clientRegisterMapView"
+            app:destination="@id/clientRegisterMapView" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientRegisterMapView"
+        android:name="com.rovianda.preventa.clients.view.ClientRegisterMapView"
+        android:label="ClientRegisterMapView"
+        tools:layout="@layout/client_register_map_view">
+        <action
+            android:id="@+id/action_clientRegisterMapView_to_clientGeneralDataView"
+            app:destination="@id/clientGeneralDataView" />
+    </fragment>
+    <fragment
+        android:id="@+id/visitMapView"
+        android:name="com.rovianda.preventa.visits.view.VisitMapView"
+        android:label="VisitMapView"
+        tools:layout="@layout/client_visits_view_map">
+        <action
+            android:id="@+id/action_visitMapView_to_visitsView"
+            app:destination="@id/visitsView" />
+    </fragment>
+</navigation>

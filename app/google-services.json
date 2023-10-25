@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "907591994739",
+    "firebase_url": "https://sistema-rovianda.firebaseio.com",
+    "project_id": "sistema-rovianda",
+    "storage_bucket": "sistema-rovianda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907591994739:android:9c87ab3d879ba76d590906",
+        "android_client_info": {
+          "package_name": "com.example.tiendas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HvYa_ETQwcgepHDkWJ-Wgj_2Z7qpt9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907591994739:android:2c12dc0d93caf426590906",
+        "android_client_info": {
+          "package_name": "com.example.ventasrovianda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HvYa_ETQwcgepHDkWJ-Wgj_2Z7qpt9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907591994739:android:c7ee752e3964b691590906",
+        "android_client_info": {
+          "package_name": "com.example.ventasrovianda3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HvYa_ETQwcgepHDkWJ-Wgj_2Z7qpt9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907591994739:android:61d3b46584345ac6590906",
+        "android_client_info": {
+          "package_name": "com.rovianda.adminventas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HvYa_ETQwcgepHDkWJ-Wgj_2Z7qpt9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907591994739:android:a57005e7fc91c7f7590906",
+        "android_client_info": {
+          "package_name": "com.rovianda.preventa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HvYa_ETQwcgepHDkWJ-Wgj_2Z7qpt9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907591994739-81nhtsgual2ao26a71sdb40697i8qlje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
